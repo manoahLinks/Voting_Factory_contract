@@ -8,7 +8,7 @@ contract VotingFactory {
     Voting poll;
     Voting[] polls;
 
-    function createSchoolMgt (address _owner, address[] memory _options) public returns (Voting) {
+    function createPolls (address _owner, address[] memory _options) external returns (Voting) {
         poll = new Voting(_owner, _options);
         
         polls.push(poll);

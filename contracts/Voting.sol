@@ -4,7 +4,7 @@ pragma solidity ^0.8.9;
 contract Voting {
 
     address owner;
-    address[] options;
+    address[] public options;
 
     constructor (address _owner, address[] memory _options) {
         
